@@ -6,9 +6,10 @@ async function bootstrap() {
 
   app.enableCors({
     origin: [
-      'http://localhost:5173', 
+      'http://localhost:5173',  
       'https://edviron-software-dev-git-db1f4d-nadeem-ahmeds-projects-a061e572.vercel.app',
-      'https://edviron-software-developer-assessment-dvs9-245k1jir6.vercel.app' 
+      'https://edviron-software-developer-assessment-dvs9-245k1jir6.vercel.app',
+      'https://edviron-software-developer-assessme.vercel.app' 
     ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true
@@ -17,4 +18,3 @@ async function bootstrap() {
   await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();
-
