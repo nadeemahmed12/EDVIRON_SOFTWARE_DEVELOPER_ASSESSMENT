@@ -7,7 +7,7 @@ async function bootstrap() {
   // CORS enable with multiple origins
   app.enableCors({
     origin: [
-      'http://localhost:5173', // dev
+      'http://localhost:5173', 
       'https://edviron-software-dev-git-db1f4d-nadeem-ahmeds-projects-a061e572.vercel.app',
       'https://edviron-software-developer-assessment-dvs9-245k1jir6.vercel.app' 
     ],
