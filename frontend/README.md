@@ -1,12 +1,36 @@
-# React + Vite
+## 🚀 Project Setup Instructions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 1. Clone the Repository
+git remote add origin https://github.com/nadeemahmed12/EDVIRON_SOFTWARE_DEVELOPER_ASSESSMENT.git
 
-Currently, two official plugins are available:
+2. Install Dependencies
+npm install
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📖 Pages Documentation
+1. Transactions Page
 
-## Expanding the ESLint configuration
+Route: /
+Displays all transactions in a tabular format.
+Features:
+Search transactions by collect_id or custom_order_id
+Filter by status
+Filter by school
+Sort by payment_time,
+order_amount,
+transaction_amount,
+gateway
+Pagination support
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Transaction Status Page
+Route: /status
+Allows checking the current status of a transaction by entering its custom_order_id.
+Features:
+Real-time fetch of transaction status
+Displays gateway, amount, and payment status
+3. School Transactions Page
+Route: /school
+Displays all transactions grouped by school ID.
+Features:
+Filter transactions by school_id
+Useful for school-specific reporting
+
