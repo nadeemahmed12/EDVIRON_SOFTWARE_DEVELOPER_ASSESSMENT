@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://edviron-software-developer-assessment.onrender.com";
 
 const instance = axios.create({
   baseURL: API_BASE,
